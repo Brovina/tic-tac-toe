@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1>Крестики-Нолики</h1>
+    </div>
+    <div class="game-info">
+        <div class="timer">Время: <span id="timer">0</span> сек</div>
+        <div class="current-player">Ходит: <span id="currentPlayer">Игрок X</span></div>
+        <div class="players">Игроки: Игрок X и Игрок O</div>
+    </div>
+    <div class="game-board" id="gameBoard">
+        <!-- Игровое поле 3x3 -->
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="game-over" id="gameOver">
+        <div id="message"></div>
+        <button id="restartButton">Сыграть еще раз</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
